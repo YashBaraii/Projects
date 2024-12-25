@@ -1,0 +1,53 @@
+QuickPicks is an Online Shopping System made by C++. It includes:
+
+1. Purpose:
+    The program simulates an online shopping platform with functionalities for user profile management, product browsing, adding items to a cart, and checkout.
+
+2. Features:
+    a. User Interface:
+        A welcoming banner for the system is displayed using the welcome() function.
+        The main menu allows users to manage their profile, view products, manage their cart, and proceed to checkout.
+
+    b. User Profile Management:
+        The userProfile class manages user details like name, contact, email, and payment options (debit/credit card).
+        Functions:
+            -> createProfile(): Collects and stores user information.
+            -> modifyProfile(): Allows users to update their profile details.
+            -> showProfile(): Displays stored profile information.
+
+    c. Product Catalog:
+        The Product class stores information about products, including name, category, and price.
+        Products are organized into categories like Electronics, Fashion, Home & Kitchen, etc., and are loaded using the loadProducts() function.
+
+    d. Cart Management:
+        The Cart class manages items added to the cart by storing product names and their quantities.
+        Functions:
+            -> addToCart(): Adds a product to the cart.
+            -> showCart(): Displays the contents of the cart along with the total price.
+            -> isEmpty(): Checks if the cart is empty.
+
+    e. Product Browsing:
+        Users can browse products by category or search for specific items by name.
+        The viewProductsByCategory() function displays products in a chosen category and allows users to add items to their cart.
+
+    f. Checkout:
+        The checkout() function displays the cart contents and prompts the user to confirm the order.
+
+
+3. Main Components:
+    a. Classes:
+        Product: Represents individual products.
+        userProfile: Handles user profile creation, modification, and display.
+        Cart: Manages cart operations.
+        OnlineShoppingSystem: Orchestrates the shopping process, including product loading, browsing, and cart checkout.
+
+    b. Functions:
+        Utility functions like headerLines() for visual separators in the console.
+
+    c. Main Function:
+        Initializes the system, loads products, and displays the main menu for user interaction.
+
+4. Highlights:
+    Dynamic Interaction: Users can create profiles, browse products, and manage their cart dynamically.
+    Error Handling: Includes checks for invalid inputs, such as non-existent products or categories.
+    Extensibility: The modular structure allows easy addition of new features or categories.
